@@ -20,7 +20,7 @@ def lookUp(word):
         for i in get_close_matches(propperNoun, data.keys()):
             if input("Did you mean %s? Type y or n: " %i).lower() == "y":
                 return data[i]
-    return -1
+    return -1 #no match found
 #END lookUp
 
 data = json.load(open("data.json"))
